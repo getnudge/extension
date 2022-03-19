@@ -1,6 +1,4 @@
 // hi srihari and raj
-//yo nav
-//sup
 
 window.addEventListener('load', function () {
     // Fetch all the content on the page
