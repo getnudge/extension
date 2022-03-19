@@ -1,3 +1,5 @@
+// hi srihari and raj
+
 window.addEventListener('load', function () {
     // Fetch all the content on the page
     console.log(document.body.innerText)
