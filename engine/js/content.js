@@ -1,4 +1,5 @@
 // hi srihari and raj
+//this is a test comment to make sure I know how this works
 
 window.addEventListener('load', function () {
     // Fetch all the content on the page
