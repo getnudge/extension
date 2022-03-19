@@ -1,22 +1,27 @@
-// hi srihari and raj
-//this is a test comment to make sure I know how this works'//
-// utgyu
 
-document.addEventListener('load', 
-  function() { 
-  //  window.alert("loaded")
-   
-    // Fetch all the content on the page
+document.addEventListener("DOMContentLoaded", function () {
+     window.alert("loaded")
+   var sentry = true
+       // Fetch all the content on the page
     // console.log(document.body.innerText)
   // this.window.alert("conversation")
   if (window.location.href.split("/watch")[0] == "https://www.youtube.com") {
     window.alert("first test passed")
     setInterval(() => {   
+      if (sentry) {
       try { 
-      this.window.alert("This youtube video is about" + document.getElementsByClassName('title style-scope ytd-video-primary-info-renderer')[0].innerText)
-      } catch(err) {
+        if (document.getElementsByClassName('title style-scope ytd-video-primary-info-renderer')) {
+           window.alert("This youtube video is about" + document.getElementsByClassName('title style-scope ytd-video-primary-info-renderer')[0].innerText)
+            sentry = false;
+          } else {
+          window.alert("no luck")
+        }
+      
+    
+    } catch(err) {
         console.log(err);
       }
+    }
     }, 1000);
 
   } else {
@@ -65,4 +70,4 @@ document.addEventListener('load',
 
 
 
-  }, false);
+  });
